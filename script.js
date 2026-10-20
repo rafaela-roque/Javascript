@@ -43,6 +43,7 @@ console.log(`Olá ${nome}, que tem ${idade} anos.`);
 
     // Váriavel //
 
+
 let apelido = "Rafaela"
 
 let peso = 400;
@@ -64,7 +65,11 @@ console.log(`Olá ${apelido}, que tem ${peso} kg.`)
 
 
 
+
+
 //-------------------------------------------------Método de String-------------------------------------------------------
+
+
 
 
 // Método de string
@@ -96,6 +101,9 @@ const idade_pessoa = 17;
 console.log(idade_pessoa >= 18);
 console.log(idade_pessoa >= 16);
 
+
+
+
 // -------------------------------------------------------Exercicio-------------------------------------------------
 
 
@@ -112,7 +120,11 @@ console.log(palavra_nome == "Karol")
 //  Quando você quer salvar algo dentro de um elemento utiliza (=)
 
 
+
+
 // ------------------------------------------------------------------------------------------------------------------
+
+
 
 
 //coletamos a idade da pessoa
@@ -143,7 +155,11 @@ if(idade_votacao > 70){
 }
 
 
+
+
 //--------------------------------------Exercicios-----------------------------------------------------------------//
+
+
 
 //Media do aluno - 01 //
 
@@ -158,7 +174,12 @@ if(media_aluno >=7){
     console.log("Reprovado")
 }
 
+
+
 //-------------------------------------------------------------------------------------------------------//
+
+
+
 
 //Receber dois Numeros - 02 //
 
@@ -178,7 +199,11 @@ if(primeiro_numero > segundo_numero){
 }
 
 
+
+
 //--------------------------------------------------------------------------------------------------------//
+
+
 
 
 //Senha Senai - 03 //
@@ -195,7 +220,11 @@ if(senha_Senai == "senai123"){
 }
 
 
+
+
 //------------------------------------------------------------------------------------------------------//
+
+
 
 //Temperatura - 04 //
 
@@ -211,7 +240,11 @@ if(temperatura_recebida < 18){
     console.log("Quente!")
 }
 
+
+
 //----------------------------------------------------------------------------------------------------------/
+
+
 
 //Classificação de Nota - 05//
 
@@ -226,7 +259,11 @@ if (nota_recebida >= 9){
     console.log("insuficiente!")
 }
 
+
+
 //---------------------------------------------------------------------------------------------------------//
+
+
 
 //Dia da semana - 06//
 
@@ -258,4 +295,161 @@ if(numero_semana == 1){
 //se o numero da semana for maior que 7
     console.log("dia invalido")
 }
+
+
+// ======================================================================================================================//
+
+
+
+
+let idade_dirigir = 19;
+let tem_CNH = true;
+let tem_carro = false;
+
+if(idade_dirigir >= 18 && tem_CNH == true && tem_carro == true){
+    console.log("Você pode dirigir")
+}else{
+    console.log("Você não pode dirigir!")
+}
+
+
+
+
+//===============================================================================================================//
+
+
+let eh_professor = false
+let eh_aluno = false
+
+if(eh_professor == true || eh_aluno == true){
+    console.log("Você tem direito a meia-entrada!")
+}else{
+    console.log("Você não tem direito a meia-entrada!")
+}
+
+// && = e
+// || = ou
+
+//if = Se
+//else if = Senão e se
+//else = Senão
+
+// else é para quando nenhuma das opções forem nem if e nem else if
+
+
+
+//============================================================================================================//
+
+
+
+  //01 - Número dentro do intervalo//
+
+//01 — Número dentro do intervalo
+//Receba um número e informe se ele está entre 10 e 50, inclusive. Caso contrário, 
+// informe que está fora do intervalo.
+
+
+
+let numero_recebido1 = 4
+
+
+if(numero_recebido1 > 10 && numero_recebido1 < 50 ){
+    console.log("Este numero esta entre 10 e 50!")
+}else{
+    console.log("Este numero esta fora de intervalo!")
+}
+
+
+//=====================================================================================================//
+
+   //02 — Elegibilidade para estágio//
+
+
+//02 — Elegibilidade para estágio//
+//Uma oportunidade de estágio é destinada a candidatos com idade entre 16 e 24 anos,
+//inclusive. Receba a idade e informe se o candidato atende ao requisito.
+
+
+
+
+let idade1 = 20
+
+if(idade1 > 16 && idade1 < 24){
+    console.log("Este candidato  atende ao requisito!")
+}else{
+    console.log("este candidato não atende aos requisitos")
+}
+
+
+
+//-------------------------------------------------------------------------------------------------------//
+
+    //03 — Frete grátis//
+
+
+  //03 — Frete grátis
+
+//Uma loja oferece frete grátis para clientes que realizam compras de R$ 200 ou mais ou que são assinantes.
+//Receba o valor da compra e uma variável booleana indicando se o cliente é assinante. 
+//Informe se ele tem direito ao frete grátis.
+
+let valor_compra = 100;
+
+let cliente_assinante = true;
+
+if(valor_compra >= 200 || cliente_assinante == true){
+    console.log("Você possui direito ao frete grátis!")}
+else{
+    console.log("Você não possui direito a frete grátis!")
+}
+
+
+//----------------------------------------------------------------------------------------------------------//
+
+   //04 — Dia de descanso//
+
+//04 — Dia de descanso//
+
+//Receba o nome de um dia da semana. Se for sábado ou domingo, exiba "Fim de semana".
+// Caso contrário, exiba "Dia útil".
+
+let semana = "Sexta-Feira"
+
+if(semana == "Sábado" || semana == "Domingo"){
+    console.log("Fim de semana!")
+}else{
+    console.log("Dia útil.")
+}
+
+//---------------------------------------------------------------------------------------------------------//
+
+    //05 — Promoção especial// 
+
+
+
+//05 — Promoção especial//
+
+//05 — Promoção especial
+//Realizar uma compra de R$ 150 ou mais e for assinante; ou
+//Possuir um cupom promocional válido, independentemente de ser assinante.
+
+//Receba o valor da compra e duas variáveis booleanas (assinante e cupom válido).
+//Informe se o desconto será aplicado e apresente o total final.
+
+let valor_compra1 = 200
+
+let eh_assinante = true     
+
+let possui_desconto = true
+
+if(valor_compra1 > 150 && eh_assinante == true || possui_desconto == true){
+    console.log("O desconto será aplicado ao final da compra")
+    console.log(valor_compra1)
+    console.log(`Sua compra com o desconto de 15% deu o total de ${valor_compra1 * 15 / 100} `)
+    console.log(`Valor total da compra ${200 - 30}`)
+}
+
+//--------------------------------------------------------------------------------------------------------//
+
+
 
