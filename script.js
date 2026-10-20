@@ -217,7 +217,7 @@ if(temperatura_recebida < 18){
 
 //receber uma nota de 0 a 10
 let nota_recebida = 3
-// a nota recebida for aapartir de 9 
+//se a nota recebida for aapartir de 9 
 if (nota_recebida >= 9){
     console.log("Excelente")
 }else if(nota_recebida >=7){
@@ -231,6 +231,31 @@ if (nota_recebida >= 9){
 //Dia da semana - 06//
 
 //receber um numero
-let numero_semana = 1
+let numero_semana = 8
 
-if(numero_semana == 1 )
+if(numero_semana == 1){
+//se o numero da semana for igual a 1
+    console.log("domingo")
+}else if(numero_semana == 2){
+//se o numero da semana for igual a 2
+    console.log("Segunda-Feira")
+}else if(numero_semana == 3){
+//se o numero da semana for igual a 3
+    console.log("Terça-Feira")
+}else if(numero_semana == 4){
+//se o numero da semana for igual a 4
+    console.log("Quarta-Feira")
+}else if(numero_semana == 5){
+//se o numero da semana for igual a 5
+    console.log("Quinta-Feira")
+}else if(numero_semana == 6){
+//se o numero da semana for igual a 6
+    console.log("Sexta-Feira")
+}else if(numero_semana == 7){
+//se o numero da semana for igual a 7
+    console.log("Sábado")
+}else{
+//se o numero da semana for maior que 7
+    console.log("dia invalido")
+}
+
