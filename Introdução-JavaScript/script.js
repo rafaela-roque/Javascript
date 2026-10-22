@@ -159,7 +159,7 @@ if(idade_votacao > 70){
 
 //--------------------------------------Exercicios-----------------------------------------------------------------//
 
-
+//ATIVIDADE DE TERCÇA-FEIRA 13/10/2026//
 
 //Media do aluno - 01 //
 
@@ -436,20 +436,58 @@ if(semana == "Sábado" || semana == "Domingo"){
 //Receba o valor da compra e duas variáveis booleanas (assinante e cupom válido).
 //Informe se o desconto será aplicado e apresente o total final.
 
-let valor_compra1 = 200
+let valor_compra1 = 100
+
+let valor_desconto = 15
 
 let eh_assinante = true     
 
-let possui_desconto = true
+let possui_cupom = true
 
-if(valor_compra1 > 150 && eh_assinante == true || possui_desconto == true){
+if(valor_compra1 >= 150 && eh_assinante == true || possui_cupom == true){
     console.log("O desconto será aplicado ao final da compra")
     console.log(valor_compra1)
     console.log(`Sua compra com o desconto de 15% deu o total de ${valor_compra1 * 15 / 100} `)
-    console.log(`Valor total da compra ${200 - 30}`)
+    console.log(`Valor total da compra ${valor_compra1 * 0.85}`)
+}else{
+    console.log("Você não tem direito ao desconto!")
+    console.log(`Tital final: ${valor_compra1}`)
 }
 
 //--------------------------------------------------------------------------------------------------------//
+
+//CORREÇÃO EXERCICIO 05 - PROMOÇÃO ESPECIAL//
+
+
+  //05 — Promoção especial// 
+
+
+
+//05 — Promoção especial//
+
+//05 — Promoção especial
+//Realizar uma compra de R$ 150 ou mais e for assinante; ou
+//Possuir um cupom promocional válido, independentemente de ser assinante.
+
+//Receba o valor da compra e duas variáveis booleanas (assinante e cupom válido).
+//Informe se o desconto será aplicado e apresente o total final.
+
+ 
+let valor_gasto = 300;
+
+let tem_cupom = true;
+
+let tem_assinatura = false;
+
+if(tem_assinatura == true && valor_gasto >= 150 || tem_cupom == true){
+    console.log(`Você tem direito ao desconto!`)
+    console.log(`Total Final: ${valor_gasto * 0.85}`)
+}else{
+    console.log("Você não tem direito ao desconto!")
+    console.log(`Total final: ${valor_compra1}`)
+}
+
+
 
 
 
